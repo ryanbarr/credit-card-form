@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkout - ShopSite</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style type="text/css">
+        @media (min-width: 768px) {
+            .narrow {
+                max-width: 730px;
+            }
+        }
+        .margin-right-10 {
+            margin-right: 10px;
+        }
+        .form-title {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+        }
+        </style>
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-static-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#shopsite-navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">ShopSite</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="shopsite-navigation">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Awesome Things</a></li>
+                                <li><a href="#">Exciting Stuff</a></li>
+                                <li><a href="#">Whatchamacallits</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">On Sale</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Your Cart (1)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="#">ShopSite</a></li>
+                <li><a href="#">Your Cart</a></li>
+                <li class="active">Checkout</li>
+            </ol>
+
+            <h2 class="form-title">Complete Your Purchase</h2>
+
+            <form class="form-horizontal narrow">
+
+                <!-- Name -->
+                <div class="form-group form-inline">
+                    <label for="firstName" class="col-sm-2 control-label">Your Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="firstName" placeholder="First Name" class="form-control col-sm-2 margin-right-10">
+                        <input type="text" name="firstName" placeholder="Last Name" class="form-control col-sm-2">
+                    </div>
+                </div>
+                <!-- /Name -->
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="addressLine1" class="col-sm-2 control-label">Billing Address</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="addressLine1" placeholder="Address Line (House Number, Street Name)" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="addressLine1" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-4">
+                        <input type="text" name="addressLine2" placeholder="Address Line 2 (Apartment, Suite)" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group form-inline">
+                    <label for="city" class="col-sm-2 control-label">City, State, Zip</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="city" placeholder="City" class="form-control margin-right-10">
+                        <input type="text" name="state" placeholder="State" class="form-control margin-right-10">
+                    </div>
+                </div>
+                <!-- /Address -->
+
+                <!-- Card Details -->
+
+                <!-- /Card Details -->
+            </form>
+        </div>
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
